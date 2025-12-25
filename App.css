@@ -1,0 +1,114 @@
+.app {
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  transition: 0.7s ease-in-out;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.sunny-bg {
+  background: linear-gradient(120deg, #ffdd00, #fcb045, #ff8c00);
+}
+
+.cloudy-bg {
+  background: linear-gradient(120deg, #bdc3c7, #2c3e50);
+}
+
+.rainy-bg {
+  background: linear-gradient(120deg, #4b79a1, #283e51);
+}
+
+.haze-bg {
+  background: linear-gradient(120deg, #606c88, #3f4c6b);
+}
+
+.default-bg {
+  background: linear-gradient(120deg, #636363, #2a2a2a);
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  padding: 10px;
+  width: 260px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-box button {
+  padding: 10px 18px;
+  margin-left: 10px;
+  background: #4e7eff;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background: #355ae0;
+}
+
+.weather-card {
+  margin: 30px auto;
+  padding: 25px;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 120px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  width: 100px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.icon-small {
+  width: 50px;
+}
+
+.recent-box {
+  margin-top: 15px;
+}
+
+.recent-list button {
+  margin: 5px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+}
